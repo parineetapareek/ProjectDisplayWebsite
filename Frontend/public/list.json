@@ -1,0 +1,61 @@
+[
+    {
+        "id": 1,
+        "name": "abc",
+        "branch":"Computer",
+        "category":"software",
+        "rating":4.7,
+        "difficulty": "easy",
+        "image" : "https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?w=826&t=st=1712427313~exp=1712427913~hmac=711823f6a1fbf1617c6061761fed77ff05454a9dad60b5a7d9248d6c29411d81"
+    },
+
+    {
+        "id": 2,
+        "name": "xyz",
+        "branch":"Information Technology",
+        "category":"software",
+        "rating":4,
+        "difficulty": "easy",
+        "image" : "https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?w=826&t=st=1712427313~exp=1712427913~hmac=711823f6a1fbf1617c6061761fed77ff05454a9dad60b5a7d9248d6c29411d81"
+    },
+
+    {
+        "id": 3,
+        "name": "lmn",
+        "branch":"E&TC",
+        "category":"hardware",
+        "rating":4.5,
+        "difficulty": "moderate",
+        "image" : "https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?w=826&t=st=1712427313~exp=1712427913~hmac=711823f6a1fbf1617c6061761fed77ff05454a9dad60b5a7d9248d6c29411d81"
+    },
+
+    {
+        "id": 4,
+        "name": "pqr",
+        "branch":"Mechanical",
+        "category":"hardware",
+        "rating":4.2,
+        "difficulty": "moderate",
+        "image" : "https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?w=826&t=st=1712427313~exp=1712427913~hmac=711823f6a1fbf1617c6061761fed77ff05454a9dad60b5a7d9248d6c29411d81"
+    },
+
+    {
+        "id": 5,
+        "name": "uvw",
+        "branch":"Automation & Robotics",
+        "category":"hardware",
+        "rating":5,
+        "difficulty": "moderate",
+        "image" : "https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?w=826&t=st=1712427313~exp=1712427913~hmac=711823f6a1fbf1617c6061761fed77ff05454a9dad60b5a7d9248d6c29411d81"
+    },
+
+    {
+        "id": 6,
+        "name": "efg",
+        "branch":"AI DS",
+        "category":"software",
+        "rating":4.7,
+        "difficulty": "moderate",
+        "image" : "https://img.freepik.com/free-vector/business-team-discussing-ideas-startup_74855-4380.jpg?w=826&t=st=1712427313~exp=1712427913~hmac=711823f6a1fbf1617c6061761fed77ff05454a9dad60b5a7d9248d6c29411d81"
+    }
+]
