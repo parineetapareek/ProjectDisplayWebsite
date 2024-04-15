@@ -1,9 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import projectRoute from "./route/project.route.js";
 import userRoute from "./route/user.route.js";
-
 import cors from "cors";
 
 const app = express();
@@ -13,24 +11,32 @@ app.use(cors());
 
 dotenv.config();
 
-const PORT=process.env.PORT || 3001;
-const URI=process.env.MongoDBURI;
+// import projectRoute from "./route/project.route.js";
 
-//connect to MongoDB
-try{
-  mongoose.connect(URI,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+mongoose
+  .connect(process.env.MONGO)
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((err) => {
+    console.error(err);
   });
-  console.log("Connected to mongoDB");
-}catch(error){
-  console.log("error: ", error);
-}
 
-//defining routes
-app.use("/project", projectRoute);
 app.use("/user", userRoute);
 
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`);
+app.listen(3000, () => {
+  console.log("Server is listening on port 3000");
 });
+
+//defining routes
+// app.use("/project", projectRoute);
+
+// app.use((err, req, res, next) => {
+//   const statusCode = err.statusCode || 500;
+//   const message = err.message || "Internal Server Error";
+//   return res.status(statusCode).json({
+//     success: false,
+//     statusCode,
+//     message,
+//   });
+// });

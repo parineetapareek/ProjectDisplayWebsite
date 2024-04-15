@@ -1,14 +1,32 @@
 import mongoose from "mongoose";
 
-const projectSchema = mongoose.Schema({
-    name: String,
-    branch: String,
-    category: String,
+const projectSchema = mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+    },
+    branch: {
+      type: String,
+      required: true,
+    },
+    category: {
+      type: String,
+      required: true,
+    },
     rating: Number,
-    difficulty: String,
-    image: String,
-});
+    difficulty: {
+      type: String,
+      required: true,
+    },
+    image: {
+      type: String,
+      required: true,
+    },
+  },
+  { timestamps: true }
+);
 
-const Project  = mongoose.model("Project", projectSchema);
+const Project = mongoose.model("Project", projectSchema);
 
-export default  Project;
+export default Project;

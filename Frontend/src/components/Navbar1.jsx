@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Login from "./Login";
 import { useAuth } from "../context/AuthProvider";
-import Logout from "./Logout";
+import Logout from "../Pages/Logout";
+import Login from "../Pages/Login";
 
 function Navbar1() {
   const [authUser, setAuthUser] = useAuth();
@@ -46,10 +46,10 @@ function Navbar1() {
         <a href="/about">About</a>
       </li>
       <li>
-        <a href="/Browse">Browse</a>
+        <a href="/browse">Browse</a>
       </li>
       <li>
-        <a>Submit Project</a>
+        <a href="/submit">Submit Project</a>
       </li>
     </>
   );
@@ -161,7 +161,7 @@ function Navbar1() {
                 >
                   Login
                 </a>
-                <Login />
+                <Login/>
               </div>
             )}
           </div>
