@@ -58,11 +58,9 @@ function FeaturedProject() {
     <>
       <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
         <div>
-          <h1 className="font-semibold text-xl pb-2">Featured Projects</h1>
+          <h1 className="font-bold text-2xl pb-2">Featured Projects</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            architecto fugiat nobis amet sapiente reprehenderit distinctio.
-            Impedit minus alias recusandae.
+            Students of different disciples have Submitted their Projects . To view Projects and submit your own <span className=" text-fuchsia-500">Sign-up!!!</span>
           </p>
         </div>
         <div>

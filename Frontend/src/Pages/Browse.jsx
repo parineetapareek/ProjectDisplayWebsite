@@ -11,7 +11,7 @@ function Browse() {
   useEffect(() => {
     const getProject = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/project");
+        const res = await axios.get("http://localhost:3000/project/get");
         console.log(res.data);
         setProject(res.data);
       } catch (error) {

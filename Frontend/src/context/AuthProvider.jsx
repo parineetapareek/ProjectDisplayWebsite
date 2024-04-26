@@ -25,4 +25,7 @@ export default function AuthProvider({ children }) {
   );
 }
 
-export const useAuth = () => useContext(AuthContext);
+export const useAuth = () => {
+  const [user, handleSignup, handleLogin] = useContext(AuthContext);
+  return [user, handleSignup, handleLogin];
+};

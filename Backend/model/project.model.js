@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
-const projectSchema = mongoose.Schema(
+const projectSchema = new mongoose.Schema(
   {
-    name: {
+    projectName: {
       type: String,
       required: true,
     },
@@ -10,17 +10,25 @@ const projectSchema = mongoose.Schema(
       type: String,
       required: true,
     },
+    college: {
+      type: String,
+      required: true,
+    },
     category: {
       type: String,
       required: true,
     },
-    rating: Number,
-    difficulty: {
+    description: {
       type: String,
       required: true,
     },
-    image: {
+    difficulty: {
       type: String,
+      enum: ["Easy", "Moderate", "Hard"],
+      required: true,
+    },
+    image: {
+      type: Array,
       required: true,
     },
   },

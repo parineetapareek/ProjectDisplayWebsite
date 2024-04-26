@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuth } from "../context/AuthProvider";
-import Logout from "../Pages/Logout";
 import Login from "../Pages/Login";
+import Profile from "./Profile";
 
 function Navbar1() {
   const [authUser, setAuthUser] = useAuth();
@@ -47,9 +47,6 @@ function Navbar1() {
       </li>
       <li>
         <a href="/browse">Browse</a>
-      </li>
-      <li>
-        <a href="/submit">Submit Project</a>
       </li>
     </>
   );
@@ -150,7 +147,7 @@ function Navbar1() {
             </label>
 
             {authUser ? (
-              <Logout />
+              <Profile />
             ) : (
               <div className="">
                 <a
@@ -161,7 +158,7 @@ function Navbar1() {
                 >
                   Login
                 </a>
-                <Login/>
+                <Login />
               </div>
             )}
           </div>
